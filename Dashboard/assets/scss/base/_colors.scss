@@ -1,0 +1,32 @@
+// Theme Colors
+$primary: #438ffe;
+$white: #ffffff;
+$success-primary: #8bc38a;
+$success-secondary: #83bcbd;
+$alert: #fe651e;
+$light: #f5f7f9;
+
+
+// Body
+$body-color: $white;
+$body-bg: #f8f8f8;
+
+// Input
+$input-bg: $light;
+
+//Icon
+$icon-color: #abb1bf;
+
+//Border
+$border-color: #ededed;
+
+//Table
+$table-row-bg: $light;
+
+//map
+$cards: (
+    "view": $primary,
+    "product": $success-primary,
+    "user": $primary,
+    "sells": $success-secondary,
+)

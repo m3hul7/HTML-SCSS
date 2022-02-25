@@ -1,0 +1,41 @@
+
+.hero {
+    
+    input[type=checkbox] {
+        display: none;
+    }
+    input[type=checkbox]:checked ~ div .aside{
+        // flex: 0 0 0;
+        width: 0;
+        flex-basis: 0;
+        transform: translateX(-100px);
+        // display: none;
+    }
+    // input[type=checkbox]:checked ~ div .main{
+    //     flex-grow: 1;
+    // }
+    input[type=checkbox]:checked ~ div main label .hamburger-icon {
+        left: 0;
+        transform: rotate(180deg);
+    }
+    .main {
+        padding: 34px;
+        position: relative;
+        // @include position (relative);
+        .hamburger-icon {
+            // @include position (absolute, 50%, auto, auto, 0);
+            border:2px solid $border-color;
+            background-color: $white;
+            // border-left: transparent;
+            // z-index: -99;
+            // transform: skew(20deg,-20deg);
+            // border-top-right-radius: 15px;
+            // border-end-end-radius: 15px;
+            border-radius: 15px;
+            transition: all .2s ease-in-out;
+    }
+        .title {
+            padding: .75rem 0;
+        }
+    }
+}

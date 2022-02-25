@@ -1,0 +1,17 @@
+// Form controls styles goes here
+.search {
+    @include position (relative);
+    margin-left: 36px;
+    &-icon {
+        @include position (absolute, 10px, auto, auto, 9px);
+        // position: absolute;
+        color: $icon-color;
+    }
+    &-input {
+        height: 36px;
+        width: 300px;
+        text-indent: 30px;
+        border-style: none;
+        background-color: $input-bg;
+    }
+}

@@ -1,0 +1,46 @@
+// Card styles goes here
+
+.card-section {
+    margin: 0 -.75rem 1.5rem;
+    .card {
+        margin: 0 $card-margin-left-and-right;
+        background-color: $white;
+        flex-basis: $card-basis;
+        padding: $card-padding;
+        transition: $transition;
+        &-icon-container {
+            font-size: $card-chart-font-size;
+            // border:1px solid red;
+            &-box {
+                font-size: $card-icon-font-size;
+                padding: $card-icon-padding; 
+                transition: $transition;
+            }
+            .chart-up {
+                color: $success-primary;
+            }
+            .chart-down {
+                transform: scaleX(-1);
+                color: $alert;
+            }
+        }
+        .card-details{
+            border-bottom: 1px solid $border-color;
+            padding: $card-padding 0;
+            &-title {
+                padding-bottom: $card-title-bottom-padding;
+            }
+            &-state {
+                font-size: $card-state-font-size;
+            }
+        }
+        &-history {
+            padding-top: .75rem;
+        }
+        // &:hover {
+        //     // background-color: $primary;
+        //     color: $white;
+        // }
+    
+    }
+}

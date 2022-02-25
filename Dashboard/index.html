@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/icons/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="d-flex flex-column h-100 hero overflow-hidden">
+        <!-- header starts -->
+        <header class="header d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <span class="brand-icon icon-square"></span>
+                <div class="search">
+                    <span class="search-icon icon-search"></span>
+                    <!-- recheck -->
+                    <input class="search-input" type="text" placeholder="Search for transsaction, item, etc">
+                </div> 
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="d-flex align-items-center">
+                <span class="header-icon icon-commenting-o"></span>
+                <span class="header-icon icon-bell"></span>
+                <figure class="profile overflow-hidden">
+                    <img class="profile-img" src="./assets/images/61fbb165e275fda579b49bf41815d7ca.png" alt="ninja">
+                </figure>
+                <span class="down-arrow-icon icon-keyboard_arrow_right"></span>
+            </div>
+        </header>
+        <!-- header ends -->
+
+        <input type="checkbox" id="checkbox">
+        
+
+        <!-- nav & main starts -->
+        <div class="d-flex flex-grow-1 overflow-hidden">
+            <!-- aside starts -->
+            <aside class="d-flex flex-column justify-content-between align-items-center aside">
+                
+                <!-- nav one starts -->
+                <nav>
+                    <ul class="navbarlist"> 
+                        <li class="nav-item">
+                            <a class="nav-item-link" href="#">
+                                <span class="icon-dashboard"></span>
+                            </a>
+                        </li>    
+                        <li class="nav-item">
+                            <a class="nav-item-link" href="#">
+                                <span class="icon-cart"></span>
+                            </a>
+                        </li>    
+                        <li class="nav-item">
+                            <a class="nav-item-link" href="#">
+                                <span class="icon-file-text"></span>
+                            </a>
+                        </li>    
+                        <li class="nav-item">
+                            <a class="nav-item-link" href="#">
+                                <span class="icon-settings"></span>
+                            </a>
+                        </li>    
+                    </ul>
+                </nav>
+                <!-- nav one ends -->
+    
+                <!-- nav two starts -->
+                <nav>
+                    <ul class="navbarlist">
+                        <li class="nav-item">
+                            <a class="nav-item-link" href="#">
+                                <span class="icon-exclamation-solid"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-link" href="#">
+                               <span class="icon-log-out"></span>
+                            </a>
+                        </li>
+                    </ul>    
+                </nav>
+                <!-- nav & two ends -->
+            </aside>
+            <!-- aside ends -->
+
+            <!-- main starts -->
+            <main class="flex-grow-1 main overflow-auto">
+                <label for="checkbox"><span class="hamburger-icon icon-keyboard_arrow_right"></span></label>
+                <h1 class="title">Dashboard</h1>
+                <!-- card starts -->
+                <section class="d-flex card-section">
+                    <div class="card card-view">
+                        <div class="card-icon-container d-flex justify-content-between align-items-center">
+                            <div class="card-icon-container-box "><span class="icon-view-show icon card-icon-bg"></span></div>
+                            <span class="icon-show_chart chart-up"></span>
+                        </div>
+                        <div class="card-details">
+                            <h5 class="card-details-title">Total views</h5>
+                            <p class="card-details-state">308.402</p>
+                        </div>
+                        <div class="card-history">Start from 1 Jan 2021</div>
+                    </div>
+                    <div class="card card-product">
+                        <div class="card-icon-container d-flex justify-content-between align-items-center">
+                            <div class="card-icon-container-box card-icon-bg"><span class="icon-shopping_bag icon"></span></div>
+                            <span class="icon-show_chart chart-down"></span>
+                        </div>
+                        <div class="card-details">
+                            <h5 class="card-details-title">Total Products</h5>
+                            <p class="card-details-state">10.820</p>
+                        </div>
+                        <div class="card-history"> + Add New Product</div>
+                    </div>
+                    <div class="card card-user">
+                        <div class="card-icon-container d-flex justify-content-between">
+                            <div class="card-icon-container-box card-icon-bg"><span class="icon-user-secret icon"></span></div>
+                            <span class="icon-show_chart chart-up"></span>
+                        </div>
+                        <div class="card-details">
+                            <h5 class="card-details-title">Total Users</h5>
+                            <p class="card-details-state">8.425</p>
+                        </div>
+                        <div class="card-history">New user noted every week</div>
+                    </div>
+                    <div class="card card-sells">
+                        <div class="card-icon-container d-flex justify-content-between">
+                            <div class="card-icon-container-box card-icon-bg"><span class="icon-cart icon"></span></div>
+                            <span class="icon-show_chart chart-up"></span>
+                        </div>
+                        <div class="card-details">
+                            <h5 class="card-details-title">Total sells</h5>
+                            <p class="card-details-state">1.028.623</p>
+                        </div>
+                        <div class="card-history">Start from 1 Jan 2021</div>
+                    </div>
+                </section>
+                <!-- card ends -->
+                <!-- table and graph starts  -->
+                <div class="d-flex overflow-hidden table-graph-wrapper">
+                    <div class="table-wrapper d-flex flex-column">
+                        <div>
+                            <table >
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th></th>
+                                        <th>Product Name</th>
+                                        <th>Status</th>
+                                        <th>Sold</th>
+                                        <th>View</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="table-body overflow-auto flex-grow-1">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <img src="./assets/images/guitar_lighting.jpg" alt="guitar">
+                                        </td>
+                                        <td>News Mobile App UI</td>
+                                        <td>Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <img src="./assets/images/guitar_lighting.jpg" alt="guitar">
+                                        </td>
+                                        <td>News Mobile App UI</td>
+                                        <td>Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <img src="./assets/images/guitar_lighting.jpg" alt="guitar">
+                                        </td>
+                                        <td>News Mobile App UI</td>
+                                        <td>Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <img src="./assets/images/guitar_lighting.jpg" alt="guitar">
+                                        </td>
+                                        <td>News Mobile App UI</td>
+                                        <td>Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <img src="./assets/images/guitar_lighting.jpg" alt="guitar">
+                                        </td>
+                                        <td>News Mobile App UI</td>
+                                        <td>Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <img src="./assets/images/guitar_lighting.jpg" alt="guitar">
+                                        </td>
+                                        <td>News Mobile App UI</td>
+                                        <td>Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <img src="./assets/images/guitar_lighting.jpg" alt="guitar">
+                                        </td>
+                                        <td>News Mobile App UI</td>
+                                        <td>Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <img src="./assets/images/guitar_lighting.jpg" alt="guitar">
+                                        </td>
+                                        <td>News Mobile App UI</td>
+                                        <td>Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <img src="./assets/images/guitar_lighting.jpg" alt="guitar">
+                                        </td>
+                                        <td>News Mobile App UI</td>
+                                        <td>Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <section class="graph flex-grow-1">
+                        
+                    </section>
+                </div>
+                <!-- table and graph ends  -->
+            </main> 
+           <!-- main ends -->
+        </div>
+        <!-- nav main ends -->
+    </div>
+</body>
+</html>

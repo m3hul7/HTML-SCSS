@@ -1,0 +1,57 @@
+.table-graph-wrapper {
+   height: $table-height;
+
+   .table-wrapper {
+      width: $width/2 + 15;
+      height: $table-height;
+      //  padding: 20px;
+    //    border: 1px solid red;
+       table {
+          width: $width;
+          padding: 0 2*$table-padding-10px;
+         // border-collapse: separate;
+         // border: 1px solid black;
+         border-spacing: 0 10px;
+         // text-align: center;
+         table-layout: $table-layout-fixed;
+         background-color: $white;
+         // border: 2px solid red;
+         // thead th{
+         //    text-align: center;
+         // }
+       }
+       .table-body {
+         //  table-layout: fixed;
+          background-color: $white;
+         //  height: 100%;
+         // overflow: scroll;
+          td {
+            //    border-bottom: 1px solid green;
+               background-color: $table-row-bg;
+            //    margin: 10px 0;
+            padding: $table-padding-10px 0;
+               &:last-child {
+                   padding-right: $table-padding-10px;
+                //    border-right: 1px solid green;
+               }
+               &:first-child {
+                // border-left: 1px solid green;
+                padding-left: $table-padding-10px;
+               }   
+            }
+       }
+       img {
+          width: $img-width;
+         //  height: 40px;
+       }
+       th {
+          padding-bottom: $table-header-padding-bottom;
+          text-align: $text-align;
+       }
+       
+    }
+    .graph {
+         margin-left: 20px;
+         background-color: $white;
+    }
+}

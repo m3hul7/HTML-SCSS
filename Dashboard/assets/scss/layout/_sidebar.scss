@@ -1,0 +1,29 @@
+
+.aside {
+    flex: 0 0 100px ;
+    width: 100px;
+    padding-bottom: 40px;
+    background-color: $white;
+    font-size: 1.5rem;
+    transition: all .4s ease-in-out;
+    .navbarlist {
+        list-style-type: none;
+        // overflow: hidden;
+        // @include position(relative);
+        .nav-item {
+        //    border: 1px solid red;
+           padding: 30px;
+           
+           &-link {
+            //    @include position(absolute);
+            //    z-index: 99;
+                color: $icon-color;
+                text-decoration: none;
+                transition: all .4s ease-in-out;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

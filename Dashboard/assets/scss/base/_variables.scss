@@ -1,0 +1,43 @@
+// All the SCSS Variables goes here
+
+//width
+$width: 100%;
+
+//text 
+$text-align: left;
+
+//Transition 
+$transition: all .4s ease-in-out;
+
+//Fonts
+$font-size-base: 1rem;
+$font-family: 'Josefin Sans', sans-serif;
+$font-bold: 500;
+
+// header 
+$header-height: 90px;
+$header-font-size: 1.25rem;
+$profile-height: 50px;
+$profile-width: 50px;
+$margin-left: 36px;
+$margin-right: 36px;
+
+//cards
+$card-basis: 25%;
+$card-margin-left-and-right: .75rem;
+$card-padding: 1rem;
+$card-chart-font-size: 3rem;
+$card-icon-font-size: 1.5rem;
+$card-icon-padding: .75rem;
+$card-title-bottom-padding: .5rem;
+$card-state-font-size: 1.75rem;
+
+//table
+$table-border-spacing: 0;
+$table-layout-fixed: fixed;
+$table-padding-10px: 1rem;
+$table-height: 500px;
+$table-header-padding-bottom: 0.75rem;
+$img-width: 40px;
+
+
