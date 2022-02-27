@@ -1,5 +1,5 @@
 .table-graph-wrapper {
-   height: $table-height;
+   // height: $table-height;
 
    .table-wrapper {
       width: $width/2 + 15;
@@ -13,7 +13,7 @@
          // border: 1px solid black;
          border-spacing: 0 10px;
          // text-align: center;
-         table-layout: $table-layout-fixed;
+         // table-layout: $table-layout-fixed;
          background-color: $white;
          // border: 2px solid red;
          // thead th{
@@ -54,4 +54,24 @@
          margin-left: 20px;
          background-color: $white;
     }
+}
+@include media-query (mobile) {
+   .table-graph-wrapper {
+      .table-wrapper {
+         width: 100%;
+      }
+      .graph {
+         margin-left: 0;
+      }
+   }
+}
+@include media-query (tablet) {
+   .table-graph-wrapper {
+      .table-wrapper {
+         width: 700px;
+      }
+      .graph {
+         margin-left: 0;
+      }
+   }
 }

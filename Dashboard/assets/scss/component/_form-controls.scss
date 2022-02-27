@@ -14,4 +14,10 @@
         border-style: none;
         background-color: $input-bg;
     }
+    @include media-query (mobile) {
+        margin-left: 0;
+            &-input {
+                width: 200px;
+            }
+    }
 }

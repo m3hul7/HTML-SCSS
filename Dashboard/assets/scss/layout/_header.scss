@@ -33,4 +33,12 @@
         margin-right: $margin-right;
         margin-left: 1rem;
     }
+    @include media-query (mobile) {
+        // .header-icon {
+        //     // margin-left: 0;
+        // }
+        .profile-header {
+            display: none;
+        }
+    }
 }

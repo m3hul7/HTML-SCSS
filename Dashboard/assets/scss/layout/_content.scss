@@ -23,6 +23,9 @@
         position: relative;
         // @include position (relative);
         .hamburger-icon {
+            position: absolute;
+            top: 50%;
+            left : 0;
             // @include position (absolute, 50%, auto, auto, 0);
             border:2px solid $border-color;
             background-color: $white;
