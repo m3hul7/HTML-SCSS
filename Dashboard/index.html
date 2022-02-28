@@ -12,27 +12,34 @@
     <div class="d-flex flex-column h-100 hero overflow-hidden">
         <!-- header starts -->
         <header class="header d-flex justify-content-between align-items-center">
+            
             <div class="d-flex align-items-center">
                 <span class="brand-icon icon-square"></span>
+                <!-- <input type="checkbox" id="searchCheckbox"> -->
                 <div class="search">
+                    <!-- <label for="searchCheckbox"><span class="icon-search"></span></label> -->
                     <span class="search-icon icon-search"></span>
                     <!-- recheck -->
                     <input class="search-input" type="text" placeholder="Search for transsaction, item, etc">
                 </div> 
                 <button class="search-btn">Search</button>
             </div>
-            <div class="d-flex align-items-center profile-header">
-                <span class="header-icon icon-commenting-o"></span>
-                <span class="header-icon icon-bell"></span>
-                <figure class="profile overflow-hidden">
-                    <img class="profile-img" src="./assets/images/61fbb165e275fda579b49bf41815d7ca.png" alt="ninja">
-                </figure>
-                <span class="down-arrow-icon icon-keyboard_arrow_right"></span>
+            <input type="checkbox" id="headerCheckbox">
+            <div class="dropdown d-flex justify-content-between align-items-center">
+                <label for="headerCheckbox"><span class="menu icon-keyboard_arrow_right"></span></label>
+                <div class="d-flex align-items-center profile-header">
+                    <span class="header-icon icon-commenting-o"></span>
+                    <span class="header-icon icon-bell"></span>
+                    <figure class="profile overflow-hidden">
+                        <img class="profile-img" src="./assets/images/61fbb165e275fda579b49bf41815d7ca.png" alt="ninja">
+                    </figure>
+                    <span class="down-arrow-icon icon-keyboard_arrow_right"></span>
+                </div>
             </div>
         </header>
         <!-- header ends -->
 
-        <input type="checkbox" id="checkbox" checked>
+        <input type="checkbox" id="sidebarCheckbox">
         
 
         <!-- nav & main starts -->
@@ -90,7 +97,7 @@
 
             <!-- main starts -->
             <main class="flex-grow-1 main overflow-auto">
-                <label for="checkbox"><span class="hamburger-icon icon-keyboard_arrow_right"></span></label>
+                <label for="sidebarCheckbox"><span class="hamburger-icon icon-keyboard_arrow_right"></span></label>
                 <h1 class="title">Dashboard</h1>
                 <!-- card starts -->
                 <section class="d-flex justify-content-between card-section">
@@ -114,7 +121,7 @@
                             <h5 class="card-details-title">Total Products</h5>
                             <p class="card-details-state">10.820</p>
                         </div>
-                        <div class="card-history"> + Add New Product</div>
+                        <div class="card-history"><a class="text-decoration-none" href="#"> + Add New Product </a></div>
                     </div>
                     <div class="card card-user">
                         <div class="card-icon-container d-flex justify-content-between">

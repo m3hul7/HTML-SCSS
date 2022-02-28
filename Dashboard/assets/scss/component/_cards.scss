@@ -1,20 +1,61 @@
 // Card styles goes here
+@each $key, $value in $cards {
+    .card-#{$key} {
+        .card-icon-container {
+            &-box {
+                background-color: lighten($color: $value, $amount: 30%);
 
+            }
+        }
+        & .icon {
+            color: $value;
+        }
+        
+        &.card {
+            &:hover {
+                background-color: $value;
+                color: white;
+                .chart-up{
+                    color: white;
+                }
+                .chart-down{
+                    color: white;
+                }
+                .icon {
+                    color: white;
+                }
+                .card-details-title {
+                    color: $white;
+                }
+                .card-history {
+                    color: $white;
+                }
+                .card-icon-container {
+                    &-box {
+                        background-color: lighten($color: $value, $amount: 5%);
+        
+                    }
+                }
+            }
+        }
+    }
+}
 .card-section {
     margin: 0 -.75rem 1.5rem;
     .card {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.233);
         margin: 0 $card-margin-left-and-right;
         background-color: $white;
         flex-basis: $card-basis;
         padding: $card-padding;
-        transition: $transition;
+        // transition: $transition;
         &-icon-container {
             font-size: $card-chart-font-size;
             // border:1px solid red;
             &-box {
                 font-size: $card-icon-font-size;
                 padding: $card-icon-padding; 
-                transition: $transition;
+                // transition: $transition;
             }
             .chart-up {
                 color: $success-primary;
@@ -28,6 +69,8 @@
             border-bottom: 1px solid $border-color;
             padding: $card-padding 0;
             &-title {
+                color: $light-grey;
+                // color: red;
                 padding-bottom: $card-title-bottom-padding;
             }
             &-state {
@@ -35,6 +78,7 @@
             }
         }
         &-history {
+            color: $light-grey;
             padding-top: .75rem;
         }
         // &:hover {

@@ -14,10 +14,18 @@
         border-style: none;
         background-color: $input-bg;
     }
-    @include media-query (mobile) {
+    
+}
+@include media-query (mobile) {
+    .search {
         margin-left: 0;
-            &-input {
-                width: 200px;
-            }
+        &-input {
+            width: 150px;
+            text-indent: 5px;
+        }
+        &-icon {
+            display: none;
+        }
     }
+    
 }

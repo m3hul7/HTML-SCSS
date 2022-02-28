@@ -1,11 +1,13 @@
 
 .aside {
+
     flex: 0 0 100px ;
     width: 100px;
     padding-bottom: 40px;
     background-color: $white;
     font-size: 1.5rem;
     transition: all .4s ease-in-out;
+    
     .navbarlist {
         list-style-type: none;
         // overflow: hidden;
@@ -25,5 +27,8 @@
                 }
             }
         }
+    }
+    @include media-query (mobile) {
+        flex: 0 0 60px;
     }
 }

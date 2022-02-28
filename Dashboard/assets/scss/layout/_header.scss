@@ -4,6 +4,12 @@
     border-bottom: 2px solid $border-color;
     background-color: $white;
     height: $header-height;
+    #headerCheckbox {
+        display: none;
+    }
+    #searchCheckbox {
+        display: none;
+    }
     .brand-icon {
         @include flex (0, 0 , 100px);
         font-size: $header-font-size;
@@ -11,34 +17,93 @@
         // margin: $margin-right;
         color: $primary;
     }
-    .header-icon {
-        color: $icon-color;
-        font-size: $header-font-size;
-        margin-left: $margin-left;
-    }
-    .profile {
-        height: $profile-height;
-        width: $profile-width;
-        margin-left: $margin-left;
-        // border: 1px solid black;
-        // background-color: rgb(207, 205, 205);
-        
-        border-radius: 50%;
-        &-img {
-            width: $width;
+    .dropdown {
+        .menu {
+            display: none;
+        }
+        .header-icon {
+            color: $icon-color;
+            font-size: $header-font-size;
+            margin-left: $margin-left;
+            position: relative;
+            &::after {
+                position: absolute;
+                z-index: 99999;
+                content: "";
+                top:-6px;
+                right: -5px;
+                height: 7px;
+                width: 7px;
+                display: block;
+                border-radius: 50%;
+                background-color: $alert;
+            }
+        }
+        .profile {
+            height: $profile-height;
+            width: $profile-width;
+            margin-left: $margin-left;
+            // border: 1px solid black;
+            // background-color: rgb(207, 205, 205);
+            
+            border-radius: 50%;
+            &-img {
+                width: $width;
+            }
+        }
+        .down-arrow-icon {
+            transform: rotate(90deg);
+            margin-right: $margin-right;
+            margin-left: 1rem;
         }
     }
-    .down-arrow-icon {
-        transform: rotate(90deg);
-        margin-right: $margin-right;
-        margin-left: 1rem;
-    }
-    @include media-query (mobile) {
+    @include media-query (tablet) {
         // .header-icon {
         //     // margin-left: 0;
         // }
-        .profile-header {
-            display: none;
+        .dropdown {
+            position: relative;
+            .menu {
+                display: block;
+                font-size: 2rem;
+                // transform: rotate(90deg);
+                padding-right: 2rem;
+            }
+            .profile-header {
+                font-size: 1.5rem;
+                border: 0 solid $border-color;
+                // flex-direction: column-reverse;
+                justify-content: space-evenly;
+                position: absolute;
+                right: 25px;
+                top: 70px;
+                width: 0px;
+                height: 0px;
+                background-color: $white;
+                z-index: 999999;
+                overflow: hidden;
+                transition: all .4s ease-in-out;
+                .header-icon {
+                    font-size: 1.5rem;
+                    margin-left : 0;
+                }
+                .profile {
+                    margin-left: 0;
+                }
+                .down-arrow-icon {
+                    display: none;
+                    margin-left: 0;
+                    margin-right: 0;
+                } 
+            }
+            
+            
         }
     }
+}
+
+#headerCheckbox:checked ~ .dropdown .profile-header{
+    width: 250px;
+    height: 70px;
+    border: 2px solid $border-color;
 }

@@ -6,4 +6,10 @@
     border-style: none;
     color: $white;
     background-color: $primary;
+   
+}
+@include media-query (mobile) {
+    .search-btn {
+        display: none;
+    }
 }

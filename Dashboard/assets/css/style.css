@@ -1,120 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap");
-.card-view .card-icon-container-box {
-  background-color: #dbeaff;
-}
-
-.card-view .icon {
-  color: #438ffe;
-}
-
-.card-view.card:hover {
-  background-color: #438ffe;
-  color: white;
-}
-
-.card-view.card:hover .chart-up {
-  color: white;
-}
-
-.card-view.card:hover .chart-down {
-  color: white;
-}
-
-.card-view.card:hover .icon {
-  color: white;
-}
-
-.card-view.card:hover .card-icon-container-box {
-  background-color: #5c9efe;
-}
-
-.card-product .card-icon-container-box {
-  background-color: #eff7ef;
-}
-
-.card-product .icon {
-  color: #8bc38a;
-}
-
-.card-product.card:hover {
-  background-color: #8bc38a;
-  color: white;
-}
-
-.card-product.card:hover .chart-up {
-  color: white;
-}
-
-.card-product.card:hover .chart-down {
-  color: white;
-}
-
-.card-product.card:hover .icon {
-  color: white;
-}
-
-.card-product.card:hover .card-icon-container-box {
-  background-color: #9ccc9b;
-}
-
-.card-user .card-icon-container-box {
-  background-color: #dbeaff;
-}
-
-.card-user .icon {
-  color: #438ffe;
-}
-
-.card-user.card:hover {
-  background-color: #438ffe;
-  color: white;
-}
-
-.card-user.card:hover .chart-up {
-  color: white;
-}
-
-.card-user.card:hover .chart-down {
-  color: white;
-}
-
-.card-user.card:hover .icon {
-  color: white;
-}
-
-.card-user.card:hover .card-icon-container-box {
-  background-color: #5c9efe;
-}
-
-.card-sells .card-icon-container-box {
-  background-color: #e7f2f2;
-}
-
-.card-sells .icon {
-  color: #83bcbd;
-}
-
-.card-sells.card:hover {
-  background-color: #83bcbd;
-  color: white;
-}
-
-.card-sells.card:hover .chart-up {
-  color: white;
-}
-
-.card-sells.card:hover .chart-down {
-  color: white;
-}
-
-.card-sells.card:hover .icon {
-  color: white;
-}
-
-.card-sells.card:hover .card-icon-container-box {
-  background-color: #94c5c6;
-}
-
 *,
 ::after,
 ::before {
@@ -198,6 +82,12 @@ body {
   background-color: #438ffe;
 }
 
+@media (max-width: 576px) {
+  .search-btn {
+    display: none;
+  }
+}
+
 .search {
   position: relative;
   top: auto;
@@ -224,18 +114,179 @@ body {
   background-color: #f5f7f9;
 }
 
+@media (max-width: 576px) {
+  .search {
+    margin-left: 0;
+  }
+  .search-input {
+    width: 150px;
+    text-indent: 5px;
+  }
+  .search-icon {
+    display: none;
+  }
+}
+
+.card-view .card-icon-container-box {
+  background-color: #dbeaff;
+}
+
+.card-view .icon {
+  color: #438ffe;
+}
+
+.card-view.card:hover {
+  background-color: #438ffe;
+  color: white;
+}
+
+.card-view.card:hover .chart-up {
+  color: white;
+}
+
+.card-view.card:hover .chart-down {
+  color: white;
+}
+
+.card-view.card:hover .icon {
+  color: white;
+}
+
+.card-view.card:hover .card-details-title {
+  color: #ffffff;
+}
+
+.card-view.card:hover .card-history {
+  color: #ffffff;
+}
+
+.card-view.card:hover .card-icon-container-box {
+  background-color: #5c9efe;
+}
+
+.card-product .card-icon-container-box {
+  background-color: #eff7ef;
+}
+
+.card-product .icon {
+  color: #8bc38a;
+}
+
+.card-product.card:hover {
+  background-color: #8bc38a;
+  color: white;
+}
+
+.card-product.card:hover .chart-up {
+  color: white;
+}
+
+.card-product.card:hover .chart-down {
+  color: white;
+}
+
+.card-product.card:hover .icon {
+  color: white;
+}
+
+.card-product.card:hover .card-details-title {
+  color: #ffffff;
+}
+
+.card-product.card:hover .card-history {
+  color: #ffffff;
+}
+
+.card-product.card:hover .card-icon-container-box {
+  background-color: #9ccc9b;
+}
+
+.card-user .card-icon-container-box {
+  background-color: #dbeaff;
+}
+
+.card-user .icon {
+  color: #438ffe;
+}
+
+.card-user.card:hover {
+  background-color: #438ffe;
+  color: white;
+}
+
+.card-user.card:hover .chart-up {
+  color: white;
+}
+
+.card-user.card:hover .chart-down {
+  color: white;
+}
+
+.card-user.card:hover .icon {
+  color: white;
+}
+
+.card-user.card:hover .card-details-title {
+  color: #ffffff;
+}
+
+.card-user.card:hover .card-history {
+  color: #ffffff;
+}
+
+.card-user.card:hover .card-icon-container-box {
+  background-color: #5c9efe;
+}
+
+.card-sells .card-icon-container-box {
+  background-color: #e7f2f2;
+}
+
+.card-sells .icon {
+  color: #83bcbd;
+}
+
+.card-sells.card:hover {
+  background-color: #83bcbd;
+  color: white;
+}
+
+.card-sells.card:hover .chart-up {
+  color: white;
+}
+
+.card-sells.card:hover .chart-down {
+  color: white;
+}
+
+.card-sells.card:hover .icon {
+  color: white;
+}
+
+.card-sells.card:hover .card-details-title {
+  color: #ffffff;
+}
+
+.card-sells.card:hover .card-history {
+  color: #ffffff;
+}
+
+.card-sells.card:hover .card-icon-container-box {
+  background-color: #94c5c6;
+}
+
 .card-section {
   margin: 0 -.75rem 1.5rem;
 }
 
 .card-section .card {
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.233);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.233);
   margin: 0 0.75rem;
   background-color: #ffffff;
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   padding: 1rem;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
 }
 
 .card-section .card-icon-container {
@@ -245,8 +296,6 @@ body {
 .card-section .card-icon-container-box {
   font-size: 1.5rem;
   padding: 0.75rem;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
 }
 
 .card-section .card-icon-container .chart-up {
@@ -265,6 +314,7 @@ body {
 }
 
 .card-section .card .card-details-title {
+  color: #adadad;
   padding-bottom: 0.5rem;
 }
 
@@ -273,11 +323,38 @@ body {
 }
 
 .card-section .card-history {
+  color: #adadad;
   padding-top: .75rem;
 }
 
-.table-graph-wrapper {
-  height: 500px;
+@media (max-width: 776px) {
+  .card-section {
+    margin: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card-section .card {
+    margin: 0;
+    margin-bottom: 1rem;
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+  .card-section .card-views {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-section {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+  }
+  .card-section .card {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
 }
 
 .table-graph-wrapper .table-wrapper {
@@ -324,6 +401,57 @@ body {
   background-color: #ffffff;
 }
 
+@media (max-width: 576px) {
+  .table-graph-wrapper .table-wrapper {
+    width: 100%;
+  }
+  .table-graph-wrapper .graph {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 776px) {
+  .table-graph-wrapper .table-wrapper {
+    width: 100%;
+  }
+  .table-graph-wrapper .graph {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    border: 1px solid #ccc;
+  }
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+}
+
 .header {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -331,6 +459,14 @@ body {
   border-bottom: 2px solid #ededed;
   background-color: #ffffff;
   height: 90px;
+}
+
+.header #headerCheckbox {
+  display: none;
+}
+
+.header #searchCheckbox {
+  display: none;
 }
 
 .header .brand-icon {
@@ -342,35 +478,99 @@ body {
   color: #438ffe;
 }
 
-.header .header-icon {
+.header .dropdown .menu {
+  display: none;
+}
+
+.header .dropdown .header-icon {
   color: #abb1bf;
   font-size: 1.25rem;
   margin-left: 36px;
+  position: relative;
 }
 
-.header .profile {
+.header .dropdown .header-icon::after {
+  position: absolute;
+  z-index: 99999;
+  content: "";
+  top: -6px;
+  right: -5px;
+  height: 7px;
+  width: 7px;
+  display: block;
+  border-radius: 50%;
+  background-color: #fe651e;
+}
+
+.header .dropdown .profile {
   height: 50px;
   width: 50px;
   margin-left: 36px;
   border-radius: 50%;
 }
 
-.header .profile-img {
+.header .dropdown .profile-img {
   width: 100%;
 }
 
-.header .down-arrow-icon {
+.header .dropdown .down-arrow-icon {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   margin-right: 36px;
   margin-left: 1rem;
 }
 
-.hero input[type=checkbox] {
+@media (max-width: 776px) {
+  .header .dropdown {
+    position: relative;
+  }
+  .header .dropdown .menu {
+    display: block;
+    font-size: 2rem;
+    padding-right: 2rem;
+  }
+  .header .dropdown .profile-header {
+    font-size: 1.5rem;
+    border: 0 solid #ededed;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    position: absolute;
+    right: 25px;
+    top: 70px;
+    width: 0px;
+    height: 0px;
+    background-color: #ffffff;
+    z-index: 999999;
+    overflow: hidden;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  .header .dropdown .profile-header .header-icon {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+  .header .dropdown .profile-header .profile {
+    margin-left: 0;
+  }
+  .header .dropdown .profile-header .down-arrow-icon {
+    display: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+#headerCheckbox:checked ~ .dropdown .profile-header {
+  width: 250px;
+  height: 70px;
+  border: 2px solid #ededed;
+}
+
+.hero #sidebarCheckbox {
   display: none;
 }
 
-.hero input[type=checkbox]:checked ~ div .aside {
+.hero #sidebarCheckbox:checked ~ div .aside {
   width: 0;
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
@@ -378,7 +578,7 @@ body {
           transform: translateX(-100px);
 }
 
-.hero input[type=checkbox]:checked ~ div main label .hamburger-icon {
+.hero #sidebarCheckbox:checked ~ div main label .hamburger-icon {
   left: 0;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -390,6 +590,9 @@ body {
 }
 
 .hero .main .hamburger-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
   border: 2px solid #ededed;
   background-color: #ffffff;
   border-radius: 15px;
@@ -430,6 +633,14 @@ body {
 
 .aside .navbarlist .nav-item-link:hover {
   color: #438ffe;
+}
+
+@media (max-width: 576px) {
+  .aside {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60px;
+            flex: 0 0 60px;
+  }
 }
 
 .text-decoration-none {
