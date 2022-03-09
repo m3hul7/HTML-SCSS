@@ -1,13 +1,16 @@
 // Card styles goes here
 .card {
     .icon-wrapper {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
-    &-view {
-        padding-top: 1rem;
-    }
-    &-stat {
-        font-size: 3rem;
+}
+@each $key, $value in $cards {
+    .card-#{$key} {
+        background-color: rgba($color: $value, $alpha: .3);
+        .icon-wrapper {
+            background-color: rgba($color: $value, $alpha: .5);
+
+        }
     }
 }
