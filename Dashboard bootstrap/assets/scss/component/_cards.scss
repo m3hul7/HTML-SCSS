@@ -1,0 +1,13 @@
+// Card styles goes here
+.card {
+    .icon-wrapper {
+        width: 30px;
+        height: 30px;
+    }
+    &-view {
+        padding-top: 1rem;
+    }
+    &-stat {
+        font-size: 3rem;
+    }
+}
