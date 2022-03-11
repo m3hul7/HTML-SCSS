@@ -10,6 +10,14 @@
 </head>
 <body>
     <div class="d-flex h-100 overflow-hidden">
+
+        <!-- sidebar toggle input starts -->
+        <input type="checkbox" id="aside-input" checked>
+        <!-- sidebar toggle input ends -->
+
+        
+        
+
         <!-- sidebar starts -->
         <aside class="aside d-flex flex-column overflow-hidden">
             <!-- brand logo starts -->
@@ -21,9 +29,8 @@
             </div>
             <!-- brand logo ends -->
             <div class="overflow-auto flex-grow-1">
-
                 <!-- nav starts -->
-                <nav class="">
+                <nav class="nav">
                     <ul class="list-unstyled">
                         <li>  
                             <a href="#" class="ps-4 py-2 nav-link d-flex align-items-center active" >
@@ -79,26 +86,38 @@
         <!-- sidebar ends -->
 
         <!-- main starts -->
-        <main class="main d-flex flex-grow-1 p-5 overflow-auto">
+        <main class="main d-flex flex-grow-1 p-5 overflow-auto position-relative flex-wrap flex-sm-wrap flex-lg-nowrap">
+            <!-- sidebar toggle label -->
+            <label for="aside-input" class="position-absolute" style="z-index: 999; top: .75rem"> <span class="icon-settings"></span> </label>
+
             <div class="flex-grow-1">
-                <div class="col-6 position-relative">
+                <!-- search input starts -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 position-relative">
                     <div class="input-group">
                         <input class="input-search form-control ps-5" type="text" placeholder="Search for stats">
                     </div>
                     <span class="input-icon icon-search position-absolute"></span>
                 </div>
+                <!-- search input ends -->
+
+
                 <div>
                     <div class="d-flex justify-content-between align-items-center py-4">
+                        <!-- hello starts -->
                         <div class="d-flex flex-column">
                             <span class="fs-3">Hello David</span>
                             <span class="py-2">Welcome Back !</span>
                         </div>
+                        <!-- hello ends -->
+
+                        <!-- filter starts -->
                         <div class="position-relative align-self-end py-2">
                             <div class="input-group filter">
                                 <input class="input-filter form-control" type="text" placeholder="Filters">
                             </div>
                             <span class="filter-icon icon-filter position-absolute"></span>
                         </div>
+                        <!-- filter ends -->
                     </div>
 
                     <div class="row pb-4">
@@ -142,10 +161,10 @@
                     </div>
 
                     <div class="row g-4">
-                        <div class="col-6">
+                        <div class="col-12 col-sm-6">
 
                         
-                            <div class="card card-sales d-flex justify-content-between flex-row p-4 border-0 bg-warning bg-opacity-25">
+                            <div class="card card-sales d-flex justify-content-between flex-column-reverse flex-md-row p-4 border-0 bg-warning bg-opacity-25">
                                 <div class="d-flex flex-column">
                                     <span class="fs-4 py-2">Sales</span>
                                     <span class="pb-2 text-color-gray-300">Total Sales Today</span>
@@ -160,10 +179,10 @@
 
                         </div>
 
-                        <div class="col-6">
+                        <div class="col-12 col-sm-6">
 
                         
-                            <div class="card card-profit d-flex justify-content-between flex-row p-4 bg-success bg-opacity-25 border-0">
+                            <div class="card card-profit d-flex justify-content-between flex-column-reverse flex-md-row p-4 bg-success bg-opacity-25 border-0">
                                 <div class="d-flex flex-column">
                                     <span class="fs-4 py-2">Sales</span>
                                     <span class="pb-2 text-color-gray-300">Total Sales Today</span>
@@ -178,10 +197,10 @@
 
                         </div>
 
-                        <div class="col-6">
+                        <div class="col-12 col-sm-6">
 
                         
-                            <div class="card card-orders d-flex justify-content-between flex-row p-4 bg-info border-0 bg-opacity-25">
+                            <div class="card card-orders d-flex justify-content-between flex-column-reverse flex-md-row p-4 bg-info border-0 bg-opacity-25">
                                 <div class="d-flex flex-column">
                                     <span class="fs-4 py-2">Sales</span>
                                     <span class="pb-2 text-color-gray-300">Total Sales Today</span>
@@ -196,10 +215,10 @@
 
                         </div>
 
-                        <div class="col-6">
+                        <div class="col-12 col-sm-6">
 
                         
-                            <div class="card card-visits d-flex justify-content-between flex-row p-4 bg-black bg-opacity-25 border-0">
+                            <div class="card card-visits d-flex justify-content-between flex-column-reverse flex-md-row p-4 bg-black bg-opacity-25 border-0">
                                 <div class="d-flex flex-column">
                                     <span class="fs-4 py-2">Sales</span>
                                     <span class="pb-2 text-color-gray-300">Total Sales Today</span>
@@ -217,55 +236,66 @@
                 </div>
             </div>
 
-            <aside class="stats-aside d-flex" >
-                <div class="stats ms-4 px-5 py-4 flex-grow-1 flex-shrink-0 d-flex flex-column rounded overflow-auto">
+            <aside class="stats-aside flex d-flex" >
+                <div class="stats ms-0 ms-sm-0 ms-lg-4 mt-4 mt-sm-4 px-5 py-4 flex-grow-1 flex-shrink-0 d-flex flex-column rounded overflow-auto">
                     <span class="fs-4 pb-4">
                         Sales Revenue
                     </span>
-                    <div class="d-flex align-items-center pb-4">
-                        <div class="border bg-white rounded-circle d-flex justify-content-center align-items-center">
-                            <span class="text-black icon-orders p-3"></span>
-                        </div>
-                        <div class="d-flex flex-column ps-4">
-                            <span class="fs-4 pb-1">230k</span>
-                            <span >Sales</span>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center pb-4">
-                        <div class="bg-white border rounded-circle d-flex justify-content-center align-items-center">
-                            <span class="text-black icon-orders p-3"></span>
-                        </div>
-                        <div class="d-flex flex-column ps-4">
-                            <span class="fs-4 pb-1">230k</span>
-                            <span >Sales</span>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center pb-4">
-                        <div class="bg-white border rounded-circle d-flex justify-content-center align-items-center">
-                            <span class="text-black icon-orders p-3"></span>
-                        </div>
-                        <div class="d-flex flex-column ps-4">
-                            <span class="fs-4 pb-1">230k</span>
-                            <span >Sales</span>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center pb-4">
-                        <div class="bg-white border rounded-circle d-flex justify-content-center align-items-center">
-                            <span class="text-black icon-orders p-3"></span>
-                        </div>
-                        <div class="d-flex flex-column ps-4">
-                            <span class="fs-4 pb-1">230k</span>
-                            <span >Sales</span>
-                        </div>
-                    </div>
                     <div>
-                        <span class="fs-4">Statistics</span>
-                        <figure>
-                            <img class="stats-bg" src="/assets/images/vecteezy_seamless-colorful-circles-pattern-backdrop-multicolor-dots_.jpg" alt="">
-                        </figure>
+                        <div class="d-flex align-items-center pb-4">
+                            <div class="border bg-white rounded-circle d-flex justify-content-center align-items-center">
+                                <span class="text-black icon-orders p-3"></span>
+                            </div>
+                            <div class="d-flex flex-column ps-4">
+                                <span class="fs-4 pb-1">230k</span>
+                                <span >Sales</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center pb-4">
+                            <div class="bg-white border rounded-circle d-flex justify-content-center align-items-center">
+                                <span class="text-black icon-orders p-3"></span>
+                            </div>
+                            <div class="d-flex flex-column ps-4">
+                                <span class="fs-4 pb-1">230k</span>
+                                <span >Sales</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center pb-4">
+                            <div class="bg-white border rounded-circle d-flex justify-content-center align-items-center">
+                                <span class="text-black icon-orders p-3"></span>
+                            </div>
+                            <div class="d-flex flex-column ps-4">
+                                <span class="fs-4 pb-1">230k</span>
+                                <span >Sales</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center pb-4">
+                            <div class="bg-white border rounded-circle d-flex justify-content-center align-items-center">
+                                <span class="text-black icon-orders p-3"></span>
+                            </div>
+                            <div class="d-flex flex-column ps-4">
+                                <span class="fs-4 pb-1">230k</span>
+                                <span >Sales</span>
+                            </div>
+                        </div>
                     </div>
-                </aside>
+                    <div class="position-relative">
+                        <span class="fs-4">Statistics</span>
+                        <div class="position-relative" style="height: 200px;">
+                            <div class="bg-white rounded-3 position-absolute bottom-0" style="z-index: 999; left:0px; height: 40px; width: 30px;"></div>
+                            <div class="bg-white rounded-3 position-absolute bottom-0" style="z-index: 999; left:40px; height: 80px; width: 30px;"></div>
+                            <div class="bg-white rounded-3 position-absolute bottom-0" style="z-index: 999; left:80px; height: 140px; width: 30px;"></div>
+                            <div class="bg-white rounded-3 position-absolute bottom-0" style="z-index: 999; left:120px; height: 100px; width: 30px;"></div>
+                            <div class="bg-white rounded-3 position-absolute bottom-0" style=" z-index: 999;left:160px; height: 40px; width: 30px;"></div>
+                            
+                        </div>
+                        <!-- <figure class="position-absolute opacity-75" style="z-index: 99; left: 0; bottom: 0;">
+                            <img style="width: 265px;" src="/assets/images/vecteezy_seamless-colorful-circles-pattern-backdrop-multicolor-dots_.jpg" alt="">
+                        </figure> -->
+                    </div>
                 </div>
+                
+            </aside>
         </main>
         <!-- main ends -->
     </div>
